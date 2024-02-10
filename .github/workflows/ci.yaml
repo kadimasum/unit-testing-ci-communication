@@ -25,3 +25,12 @@ jobs:
       - name: Run tests
         run: |
           python3 phonebook_test.py
+
+      - name: Notify on slack
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_USERNAME: Sinatra
+          SLACK_TITLE: Testing Basics
+          SLACK_MESSAGE: New Changes committed
+          SLACK_COLOR: ${{ job.status }}

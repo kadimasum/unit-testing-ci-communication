@@ -9,3 +9,6 @@ Welcome to Unit Testing, CI and Communication. This repository contains a projec
 - Basic Python Programing Knowledge
 - Version Control Knowledge(GIt & GitHub)
 - Download slack
+
+## Integrate Slack
+- [Documentation](https://github.com/marketplace/actions/slack-notify)
