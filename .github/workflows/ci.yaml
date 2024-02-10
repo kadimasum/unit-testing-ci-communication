@@ -31,6 +31,6 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_USERNAME: Sinatra
-          SLACK_TITLE: Testing Basics
+          SLACK_TITLE: Continuous Integration Report
           SLACK_MESSAGE: New Changes committed
           SLACK_COLOR: ${{ job.status }}
