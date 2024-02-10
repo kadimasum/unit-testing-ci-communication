@@ -36,7 +36,6 @@ jobs:
             Tests ${{ job.status }} in the latest commit
             Commit: ${{ github.sha }}
             Committer: ${{ github.actor }}
-            Workflow Run URL: ${{ github.event.workflow_run.url }}
           SLACK_COLOR: ${{ job.status }}
 
       - name: Notify on Slack on Failure
@@ -50,5 +49,4 @@ jobs:
             Tests ${{ job.status }} in the latest commit
             Commit: ${{ github.sha }}
             Committer: ${{ github.actor }}
-            Workflow Run URL: ${{ github.event.workflow_run.url }}
           SLACK_COLOR: ${{ job.status }}
