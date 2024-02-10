@@ -46,5 +46,9 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_USERNAME: Sinatra
           SLACK_TITLE: Continuous Integration Report
-          SLACK_MESSAGE: Tests failed in the latest commit
+          SLACK_MESSAGE: |
+            Tests ${{ job.status }} in the latest commit
+            Commit: ${{ github.sha }}
+            Committer: ${{ github.actor }}
+            Workflow Run URL: ${{ github.run_url }}
           SLACK_COLOR: ${{ job.status }}
