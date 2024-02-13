@@ -23,7 +23,7 @@ class Phonebook_Test(unittest.TestCase):
         self.person_y.save()
         self.person_z.save()
         self.person_x.save()
-        self.assertEqual(5, len(Phonebook.contacts))
+        self.assertEqual(3, len(Phonebook.contacts))
         self.assertEqual("Brian", Phonebook.contacts[0].first_name)
         self.assertEqual("Jane", Phonebook.contacts[1].first_name)
         self.assertEqual("John", Phonebook.contacts[2].first_name)
