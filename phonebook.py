@@ -12,11 +12,11 @@ class Phonebook:
         if len(Phonebook.contacts) == 0:
             self.id = 1
             Phonebook.id = 1
-            self.contacts.append(self)
         else:
             Phonebook.id += 1
             self.id = Phonebook.id
-            self.contacts.append(self)
+            
+        self.contacts.append(self)
 
     def read_all_contacts():
         return Phonebook.contacts
